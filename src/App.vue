@@ -1,17 +1,23 @@
 <script setup>
   import { reactive } from 'vue';
   import Cabecalho from './components/Cabecalho.vue'
-  import Formulario from './components/Formulario.vue'
-  import ListaDeTarefas from './components/ListaDeTarefas.vue'
+  import SobreNos from './components/SobreNos.vue'
+  import Projetos from './components/Projetos.vue'
   import Membros from './components/Membros.vue'
+  import Carousel from './components/Carousel.vue';
+  import Voluntario from './components/Voluntario.vue';
+  
+
   const whatsappNumber = 'https://wa.me/5521988112805?text=Ol%C3%A1+Vim+do+Site';
 </script>
 
 <template>
   <Cabecalho/>
-  <Formulario/>
-  <ListaDeTarefas/>
+  <Carousel/>
+  <SobreNos/>
+  <Projetos/>
   <Membros/>
+  <Voluntario/>
   <a :href="whatsappNumber" target="_blank" class="whatsapp-button">
     <i class="fab fa-whatsapp"></i>
   </a>
