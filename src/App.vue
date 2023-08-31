@@ -8,11 +8,11 @@
 </script>
 
 <template>
-    <Cabecalho/>
-    <Formulario/>
-    <ListaDeTarefas/>
-    <Membros/>
-    <BotaoZap/>
+  <Cabecalho/>
+  <Formulario/>
+  <ListaDeTarefas/>
+  <Membros/>
+  <BotaoZap/>
 </template>
 
 
