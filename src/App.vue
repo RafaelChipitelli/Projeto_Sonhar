@@ -18,6 +18,7 @@
   <Projetos/>
   <Membros/>
   <Voluntario/>
+  
   <a :href="whatsappNumber" target="_blank" class="whatsapp-button">
     <i class="fab fa-whatsapp"></i>
   </a>

@@ -2,31 +2,32 @@
     <section id="contato">
         <div class="container">
             <h2>Cadastre-se Aqui:</h2>
-            <form @submit.prevent="handleSubmit">
+            <form id="form">
                 <div class="form-campo">
                     <label for="nome">Nome Completo:</label>
-                    <input v-model="formData.nome" type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome">
                 </div>
                 <div class="form-campo">
                     <label for="CPF">CPF:</label>
-                    <input v-mask="'(###) ###.###-###'" v-model="cpf" placeholder="CPF">
+                    <input type="text" id="CPF" name="CPF">
                 </div>
                 <div class="form-campo">
                     <label for="telefone">Telefone:</label>
-                    <input v-mask="'(##) #####-####'" v-model="telefone" placeholder="Telefone">
+                    <input type="tel" id="telefone" name="telefone">
                 </div>
                 <div class="form-campo">
                     <label for="email">E-mail:</label>
-                    <input v-model="formData.email" type="email" id="email" name="email">
+                    <input type="email" id="email" name="email">
                 </div>
                 <div class="form-campo">
                     <label for="endereço">Endereço Completo:</label>
-                    <input v-model="formData.endereço" type="text" id="endereço" name="endereço">
+                    <input type="text" id="endereço" name="endereço">
                 </div>
                 <div class="form-campo">
                     <label for="CEP">CEP:</label>
-                    <input v-mask="'#####-###'" v-model="cep" placeholder="CEP">
+                    <input type="text" id="CEP" name="CEP">
                 </div>
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
                 <button type="submit">Enviar</button>
             </form>
         </div>
@@ -34,27 +35,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
 
-const formData = ref({
-    nome: '',
-    CPF: '',
-    telefone: '',
-    email: '',
-    endereço: '',
-    CEP: ''
-});
-
-// Definindo as máscaras
-const phoneMask = '(00) #####-####';
-const cpfMask = '###.###.###-##';
-const cepMask = '#####-###';
-
-const handleSubmit = () => {
-    // Use a lógica do Vue para manipular o formulário
-    // Por exemplo, você pode enviar os dados usando fetch ou axios.
-    console.log(formData.value); // Para verificar se os dados estão sendo coletados corretamente
-};
 </script>
 
 <style scoped>
