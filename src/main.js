@@ -1,12 +1,3 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
-
-const app = createApp(App);
-app.mount('#app');
-
 $(document).ready(function() {
     $('#telefone').mask('(00) 00000-0000')
     $('#CPF').mask('000.000.000-00')
@@ -80,6 +71,16 @@ $(document).ready(function() {
 
     document.querySelector('form').addEventListener('submit', handleSubimit);
 });
+
+import { createApp } from 'vue';
+import App from './App.vue';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+
+const app = createApp(App);
+app.mount('#app');
+
 
 
 
