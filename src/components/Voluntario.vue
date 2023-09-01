@@ -1,37 +1,39 @@
 <template>
-    <section id="contato">
-        <div class="container">
-            <h2>Cadastre-se Aqui:</h2>
-            <form id="form">
-                <div class="form-campo">
-                    <label for="nome">Nome Completo:</label>
-                    <input type="text" id="nome" name="nome">
-                </div>
-                <div class="form-campo">
-                    <label for="CPF">CPF:</label>
-                    <input type="text" id="CPF" name="CPF">
-                </div>
-                <div class="form-campo">
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone">
-                </div>
-                <div class="form-campo">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div class="form-campo">
-                    <label for="endereço">Endereço Completo:</label>
-                    <input type="text" id="endereço" name="endereço">
-                </div>
-                <div class="form-campo">
-                    <label for="CEP">CEP:</label>
-                    <input type="text" id="CEP" name="CEP">
-                </div>
-                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
+    <div id="voluntario" class="" data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="voluntario">
+            <div class="container" id="voluntario">
+                <h2>Cadastre-se Aqui:</h2>
+                <form id="form">
+                    <div class="form-campo">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div class="form-campo">
+                        <label for="CPF">CPF:</label>
+                        <input type="text" id="CPF" name="CPF">
+                    </div>
+                    <div class="form-campo">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+                    <div class="form-campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-campo">
+                        <label for="endereço">Endereço Completo:</label>
+                        <input type="text" id="endereço" name="endereço">
+                    </div>
+                    <div class="form-campo">
+                        <label for="CEP">CEP:</label>
+                        <input type="text" id="CEP" name="CEP">
+                    </div>
+                    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </div>
 </template>
 
 <script setup>

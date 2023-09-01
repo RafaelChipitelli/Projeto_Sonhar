@@ -5,7 +5,9 @@
 <template>
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand m-0">Projeto Sonhar</h1>
+            <h1 class="navbar-brand m-0">
+                <a href="#">Projeto Sonhar</a>
+            </h1>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,7 +29,7 @@
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#voluntário">
+                        <a class="nav-link" href="#voluntario">
                             Seja Voluntário!
                         </a>
                     </li>
@@ -38,6 +40,12 @@
 </template>
 
 <style scoped>
+
+* {
+    color: #fff;
+    text-decoration: none;
+}
+
 .navbar {
     background-color: #e15f41;
 }
